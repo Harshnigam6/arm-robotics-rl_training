@@ -1,0 +1,12 @@
+Collecting shimmy
+  Downloading Shimmy-2.0.0-py3-none-any.whl.metadata (3.5 kB)
+Requirement already satisfied: numpy>=1.18.0 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from shimmy) (1.22.4)
+Requirement already satisfied: gymnasium>=1.0.0a1 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from shimmy) (1.0.0)
+Requirement already satisfied: cloudpickle>=1.2.0 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from gymnasium>=1.0.0a1->shimmy) (3.1.1)
+Requirement already satisfied: typing-extensions>=4.3.0 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from gymnasium>=1.0.0a1->shimmy) (4.11.0)
+Requirement already satisfied: farama-notifications>=0.0.1 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from gymnasium>=1.0.0a1->shimmy) (0.0.4)
+Requirement already satisfied: importlib-metadata>=4.8.0 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from gymnasium>=1.0.0a1->shimmy) (7.0.1)
+Requirement already satisfied: zipp>=0.5 in c:\users\harshnigam\anaconda3\envs\eyes\lib\site-packages (from importlib-metadata>=4.8.0->gymnasium>=1.0.0a1->shimmy) (3.17.0)
+Downloading Shimmy-2.0.0-py3-none-any.whl (30 kB)
+Installing collected packages: shimmy
+Successfully installed shimmy-2.0.0
