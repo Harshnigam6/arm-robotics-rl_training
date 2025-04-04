@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --mem=32G
-#SBATCH --time=3
+
 
 # ------------------------------------------------------------------------------
 # 1) Load necessary modules (if your cluster uses modules)
