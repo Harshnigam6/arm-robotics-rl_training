@@ -88,5 +88,5 @@ checkpoint_callback = CheckpointCallback(
 combined_callback = CallbackList([SubRewardCallback(), checkpoint_callback])
 
 # Train the agent
-model.learn(total_timesteps=1_000_000, callback=combined_callback)  # training for 1e6 timesteps as an example
+model.learn(total_timesteps=20000, callback=combined_callback)  # training for 1e6 timesteps as an example
 model.save("xarm6_ppo_policy")
