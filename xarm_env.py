@@ -20,7 +20,7 @@ class XArm6PickPlaceEnv(gym.Env):
 
         # Load xArm6 URDF
         self.robot_id = p.loadURDF(
-            "assets_repo/bullet3/examples/pybullet/gym/pybullet_data/xarm/xarm6_with_gripper.urdf",
+            "assets_repo/xarm6_with_gripper.urdf",
             basePosition=[0,0,0],
             useFixedBase=True
         )
