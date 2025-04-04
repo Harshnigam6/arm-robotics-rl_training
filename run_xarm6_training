@@ -18,7 +18,7 @@ module load cuda/11.7
 
 # Here we assume you already have a virtual environment named "xarm6_env".
 # # Adjust to your environment setup:
-source ~/envs/xarm6_env/bin/activate
+source ~/envs/xarm6_env_new/bin/activate
 
 # ------------------------------------------------------------------------------
 # 3) Install dependencies from requirements.txt
