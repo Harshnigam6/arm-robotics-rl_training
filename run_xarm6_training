@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # ------------------------------------------------------------------------------
 # 1) Load necessary modules (if your cluster uses modules)
