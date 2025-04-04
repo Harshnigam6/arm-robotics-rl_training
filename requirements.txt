@@ -1,0 +1,6 @@
+pybullet==3.2.7
+torch==2.3.1
+gym==0.25.2
+stable-baselines3==1.2.0
+tensorboard==2.19.0
+numpy>=1.18.0
