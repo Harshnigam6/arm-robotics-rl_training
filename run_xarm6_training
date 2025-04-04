@@ -29,7 +29,7 @@ python -m pip install --upgrade pip
 # 4) Navigate to your repo folder (where your training script is located)
 cd /home/hnigam/projects/def-tzou/hnigam/arm-robotics-rl_training
 ls
-python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt --index-url=https://pypi.org/simple
 
 # ------------------------------------------------------------------------------
 # 5) Run your training script
