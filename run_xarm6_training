@@ -23,13 +23,13 @@ module load cuda/11.3
 # ------------------------------------------------------------------------------
 # 3) Install dependencies from requirements.txt
 #    (If you have not already installed them in your environment)
-pip install --upgrade pip
+python -m pip install --upgrade pip
 
 # ------------------------------------------------------------------------------
 # 4) Navigate to your repo folder (where your training script is located)
 cd /home/hnigam/projects/def-tzou/hnigam/arm-robotics-rl_training
 ls
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 
 # ------------------------------------------------------------------------------
 # 5) Run your training script
