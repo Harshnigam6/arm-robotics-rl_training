@@ -97,6 +97,11 @@ envs = DummyVecEnv(envs)
 envs = VecMonitor(envs)  # recommended for SB3
 # env = DummyVecEnv([lambda: XArm6PickPlaceEnv(render=False) for _ in range(8)])
 
+print(os.path.join(os.getcwd(), "ppo_xarm6_tensorboard"), flush=True)
+
+print(os.path.join(os.getcwd(), "checkpoints"), flush=True)
+
+
 # Instantiate PPO with a MultiInputPolicy (for dict obs) and desired hyperparameters
 model = sb3.PPO(
     policy="MultiInputPolicy", 
@@ -110,7 +115,7 @@ model = sb3.PPO(
     clip_range=0.2, 
     ent_coef=0.0,            # entropy coefficient (could tune >0 to encourage exploration)
     device="cuda",           # use GPU acceleration
-    tensorboard_log="ppo_xarm6_tensorboard",
+    tensorboard_log = os.path.join(os.getcwd(), "ppo_xarm6_tensorboard"),
     verbose=1
 )
 
@@ -120,7 +125,7 @@ callback = SubRewardCallback()
 
 checkpoint_callback = CheckpointCallback(
     save_freq=10000,               # Save the model every 10k timesteps
-    save_path='checkpoints',    # Folder to save the checkpoint files
+    save_path=os.path.join(os.getcwd(), "checkpoints"),    # Folder to save the checkpoint files
     name_prefix='xarm6_model'      # Prefix for the saved files
 )
 
