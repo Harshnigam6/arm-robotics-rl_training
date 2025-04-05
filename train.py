@@ -71,7 +71,8 @@ model = sb3.PPO(
     clip_range=0.2, 
     ent_coef=0.0,            # entropy coefficient (could tune >0 to encourage exploration)
     device="cuda",           # use GPU acceleration
-    tensorboard_log="./ppo_xarm6_tensorboard/"
+    tensorboard_log="./ppo_xarm6_tensorboard/",
+    verbose=2
 )
 
 
