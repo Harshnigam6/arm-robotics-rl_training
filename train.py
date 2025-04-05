@@ -5,6 +5,45 @@ from gym.wrappers import TimeLimit
 from stable_baselines3.common.monitor import Monitor
 from xarm_env import XArm6PickPlaceEnv
 from stable_baselines3.common.callbacks import CheckpointCallback, CallbackList
+import os
+
+
+
+
+
+
+
+print("Saving start")
+directory_path = "checkpoints"
+file_name = "example.txt"
+file_content = "This is some arbitrary text you want to save in a file."
+
+# Ensure the directory exists
+os.makedirs(directory_path, exist_ok=True)
+
+# Full path to the file
+file_path = os.path.join(directory_path, file_name)
+
+# Write the content to the file
+with open(file_path, "w") as file:
+    file.write(file_content)
+
+print(f"File saved at: {file_path}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class SubRewardCallback(BaseCallback):
     """
@@ -72,7 +111,7 @@ model = sb3.PPO(
     ent_coef=0.0,            # entropy coefficient (could tune >0 to encourage exploration)
     device="cuda",           # use GPU acceleration
     tensorboard_log="./ppo_xarm6_tensorboard/",
-    verbose=2
+    verbose=1
 )
 
 
