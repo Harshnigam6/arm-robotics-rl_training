@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --mem=32G
 #SBATCH --cpus-per-task=16
+#SBATCH --time=2:59:00
 
 
 
@@ -9,7 +10,7 @@
 # 1) Load necessary modules (if your cluster uses modules)
 #    The specifics here depend on your HPC environment.
 #    Examples:
-module load python/3.9
+module load python/3.11
 module load cudacore/.11.7.0
 
 # ------------------------------------------------------------------------------
