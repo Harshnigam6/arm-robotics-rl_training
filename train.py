@@ -124,7 +124,7 @@ callback = SubRewardCallback()
 
 
 checkpoint_callback = CheckpointCallback(
-    save_freq=10000,               # Save the model every 10k timesteps
+    save_freq=1000,               # Save the model every 10k timesteps
     save_path=os.path.join(os.getcwd(), "checkpoints"),    # Folder to save the checkpoint files
     name_prefix='xarm6_model'      # Prefix for the saved files
 )
