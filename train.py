@@ -13,7 +13,7 @@ import os
 
 
 
-print("Saving start")
+print("Saving start", flush=True)
 directory_path = "checkpoints"
 file_name = "example.txt"
 file_content = "This is some arbitrary text you want to save in a file."
@@ -110,7 +110,7 @@ model = sb3.PPO(
     clip_range=0.2, 
     ent_coef=0.0,            # entropy coefficient (could tune >0 to encourage exploration)
     device="cuda",           # use GPU acceleration
-    tensorboard_log="./ppo_xarm6_tensorboard/",
+    tensorboard_log="ppo_xarm6_tensorboard",
     verbose=1
 )
 
@@ -120,7 +120,7 @@ callback = SubRewardCallback()
 
 checkpoint_callback = CheckpointCallback(
     save_freq=10000,               # Save the model every 10k timesteps
-    save_path='./checkpoints/',    # Folder to save the checkpoint files
+    save_path='checkpoints',    # Folder to save the checkpoint files
     name_prefix='xarm6_model'      # Prefix for the saved files
 )
 
