@@ -1,14 +1,7 @@
 #!/bin/bash
 #SBATCH --mem=32G
 
-#SBATCH --nodes=1             # Request 1 nodes so all resources are in two nodes. 几个结点
 
-#SBATCH --gpus-per-node=v100:1  #cedar 对应sbatch来说，两个#是注释
-
-#SBATCH --tasks-per-node=1   # Request 1 process per GPU. You will get 1 CPU per process by default. Request more CPUs with the "cpus-per-task" parameter to enable multiple data-loader workers to load data in parallel.
-
-#SBATCH --cpus-per-task=16
-#SBATCH --time=2:59:00
 
 
 # ------------------------------------------------------------------------------
